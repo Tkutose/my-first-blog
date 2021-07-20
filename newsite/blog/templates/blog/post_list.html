@@ -9,7 +9,7 @@
                 <p>published: {{ post.published_date }}</p>
             </div>
             <!-- 呼び出し元のurlsからpkという変数を受け取る -->
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <h2><a href="{% url 'blogs:post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
         {% endfor %}

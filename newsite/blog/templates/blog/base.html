@@ -13,7 +13,7 @@
     <div class="page-header">
         <!-- ログインしている場合のみ新規投稿ボタンを追加 -->
         {% if user.is_authenticated %}
-        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <a href="{% url 'blogs:post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}        
     
         <h1><a href="/">Django Girls Blog</a></h1>
